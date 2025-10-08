@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaArrowDown } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const TrendingApp = ({ app }) => {
     // console.log(app);
 
     return (
-        <div className='shadow-sm p-3 bg-white rounded-sm '>
+        <Link to={`/appDetails/${app.id}`}><div className='shadow-sm p-3 bg-white rounded-sm '>
             <img src={app.image} alt={app.title} className='rounded-2xl mx-auto m-3' />
             <h3 className='font-semibold '>{app.title}</h3>
 
@@ -15,7 +16,8 @@ const TrendingApp = ({ app }) => {
                 <p className='text-[#ff8811] w-[60px] h-[26px] rounded-md bg-[#fff0e1] flex gap-1 justify-center items-center p-' ><FaStar />
                     {app.ratingAvg
                     }</p></span>
-        </div>
+        </div></Link>
+
     );
 };
 

@@ -1,21 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaRegThumbsUp } from "react-icons/fa6";
 
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 const AppDetails = () => {
     const { id } = useParams()
     const appId = parseInt(id)
     const appData = useLoaderData()
     const singleApp = appData.find(app => app.id === appId)
-    console.log(singleApp);
-    // console.log(typeof appId);
+    const [install, setInstall] = useState(false);
 
-    // console.log(typeof appData);
-    // console.log(appData);
+    const handleClickInstall = () => {
+        setInstall(true);
+    };
 
-    console.log(id);
 
     return (
         <div className='bg-gray-200 w-max-[1200px] mx-auto'>
@@ -51,11 +51,15 @@ const AppDetails = () => {
                             <p className='font-extrabold text-2xl'>{singleApp.reviews}</p>
                         </div>
                     </div>
-                    <div><button className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Install Now ({singleApp.size} MB)</button></div>
+                    <div><button onClick={() => handleClickInstall()} className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> {install === true ? "Installed" : `Install Now (${singleApp.size} MB)`}</button></div>
                 </span>
             </div>
             <div className="divider w-max-[1200px]"></div>
-            <div><h1>rating grap</h1></div>
+
+            <div><h1>rating grap</h1>
+
+            </div>
+
             <div className="divider w-max-[1200px]"></div>
 
             <div className='pt-9 p-5 lg:pl-33'><p className='font-bold text-2xl mb-5 '>Description</p>
