@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co.com/MD098tVS/download.jpg",
+        "title": "Spotify - Music and Podcasts",
+        "shortDescription": "Stream millions of songs & shows",
+        "companyName": "Spotify AB",
+        "description": "Spotify is more than just a music app — it’s your personal soundtrack for every moment of the day. With millions of songs, albums, and podcasts available on demand, you can explore every genre, artist, or mood imaginable. Spotify’s smart recommendation engine learns your taste and curates personalized playlists like Discover Weekly or Daily Mix, so you always have something fresh to listen to. Whether you’re on a morning commute, working out, or unwinding before bed, Spotify adjusts perfectly to your rhythm. Offline listening ensures your favorite music is always available, even without an internet connection. The app’s sleek, minimalist design allows seamless control, while Spotify Connect lets you play music on any device — from your phone to your speakers — with just a tap. \n\nSpotify also goes beyond music with podcasts, audiobooks, and exclusive shows from global creators. Follow your favorite artists, build collaborative playlists with friends, and explore live events. Every element of Spotify is built to make listening effortless, emotional, and endlessly enjoyable — a true companion for music lovers everywhere.",
+        "size": 100,
+        "reviews": 32000000,
+        "ratingAvg": 4.4,
+        "downloads": "1B+"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co.com/Q7XRpvsV/download.png",
+        "title": "Telegram - Fast Messaging",
+        "shortDescription": "Private & secure communication",
+        "companyName": "Telegram FZ-LLC",
+        "description": "Telegram redefines messaging by combining speed, privacy, and power. Built with a distributed network of secure servers, it ensures lightning-fast delivery and robust encryption. Unlike traditional messengers, Telegram keeps your data synchronized across all devices — phone, tablet, and desktop — so you can pick up conversations exactly where you left off. With channels, bots, groups, and communities that support up to 200,000 members, it’s as much a communication platform as it is a social network. \n\nThe app empowers users to send files of any size or type, from documents to HD videos, without compression loss. Secret Chats offer end-to-end encryption with self-destructing messages for complete confidentiality. Telegram’s open API and bot ecosystem let developers build games, automation tools, and smart assistants right inside the chat interface. The interface remains clean, modern, and distraction-free, keeping your conversations the focus. \n\nWhether you’re chatting one-on-one, managing large groups, or broadcasting to an audience, Telegram’s reliability and security make it a go-to for professionals, creators, and communities who value freedom and speed in communication.",
+        "size": 90,
+        "reviews": 17000000,
+        "ratingAvg": 4.5,
+        "downloads": "1B+"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co.com/kVxx1h1N/download.png",
+        "title": "Duolingo - Language Lessons",
+        "shortDescription": "Learn languages for free",
+        "companyName": "Duolingo",
+        "description": "Duolingo transforms language learning into a joyful and addictive experience. Using gamified lessons, interactive challenges, and real-time feedback, it helps millions of learners master new languages without feeling overwhelmed. The app’s bite-sized lessons make it easy to study anytime — on a bus ride, during a break, or before bed. With over 30 languages to choose from, including Spanish, French, Japanese, and even fictional ones like Klingon, it’s the most fun you can have while expanding your global vocabulary. \n\nEvery lesson focuses on reading, writing, speaking, and listening skills, using intelligent repetition to reinforce memory. The app’s mascot, Duo the owl, keeps learners motivated with reminders, streaks, and achievements that celebrate progress. Duolingo’s AI adapts difficulty based on performance, ensuring that learning always stays challenging but achievable. \n\nBeyond individuals, Duolingo is also a tool for schools and teachers, helping classrooms gamify learning. Whether you’re preparing for travel, exams, or simply personal growth, Duolingo’s friendly design and science-backed method make language learning both effective and genuinely enjoyable.",
+        "size": 60,
+        "reviews": 19000000,
+        "ratingAvg": 4.7,
+        "downloads": "500M+"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co.com/5XQMP1n5/download.jpg",
+        "title": "Canva - Design, Photo & Video",
+        "shortDescription": "Create stunning designs easily",
+        "companyName": "Canva",
+        "description": "Canva brings the power of professional design to everyone — no design degree required. From social media graphics and business presentations to invitations and posters, Canva provides thousands of beautiful templates and an intuitive drag-and-drop editor. Its built-in AI tools, like Magic Design and Background Remover, make complex edits as easy as a tap. Whether you’re a student creating a project or a marketer building brand content, Canva helps your ideas stand out visually and professionally. \n\nUsers can collaborate in real-time, leave feedback, and create consistent branding with saved color palettes, fonts, and templates. The integrated stock library offers millions of images, icons, and videos, ensuring endless creative possibilities. You can even schedule and post directly to social platforms without leaving the app. \n\nCanva adapts beautifully across devices, letting you start a design on your phone and finish it on your computer. With its simplicity, flexibility, and constant innovation, Canva is not just a design tool — it’s a creativity engine for the modern world.",
+        "size": 150,
+        "reviews": 12000000,
+        "ratingAvg": 4.8,
+        "downloads": "500M+"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co.com/RkPhZBXB/download.jpg",
+        "title": "Zoom - One Platform to Connect",
+        "shortDescription": "Meet, chat & collaborate anywhere",
+        "companyName": "Zoom Video Communications, Inc.",
+        "description": "Zoom has revolutionized the way the world connects. From business meetings and online classes to family gatherings, it provides a smooth, reliable, and high-quality communication experience. With features like HD video, screen sharing, breakout rooms, and cloud recording, Zoom empowers teams to collaborate as effectively as if they were in the same room. Its adaptive bandwidth technology ensures stability even in low-network conditions. \n\nThe interface is simple, yet powerful. Users can schedule, host, or join meetings with just a link. Integrated chat, file sharing, and whiteboard tools enhance collaboration, while advanced security — including meeting locks and encryption — keeps your conversations safe. For educators and remote teams, Zoom integrates seamlessly with tools like Google Workspace, Slack, and Microsoft Teams. \n\nMore than just a meeting app, Zoom has become a digital workspace where people connect, share ideas, and create together. Whether it’s for professional collaboration or personal connection, Zoom continues to redefine how the world stays in touch.",
+        "size": 150,
+        "reviews": 10500000,
+        "ratingAvg": 4.3,
+        "downloads": "1B+"
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co.com/JjXhBXJz/download.png",
+        "title": "Google Keep - Notes and Lists",
+        "shortDescription": "Quick notes, lists & reminders",
+        "companyName": "Google LLC",
+        "description": "Google Keep turns your thoughts into organized, accessible notes within seconds. Whether it’s a grocery list, a sudden idea, or a voice memo, Keep captures everything instantly. Its colorful card-style layout and simple interface make it visually engaging and easy to manage. Syncing automatically across devices via Google Drive, your notes are always right where you need them — on your phone, tablet, or computer. \n\nYou can set time-based or location-based reminders, collaborate on shared notes, and organize with labels and colors. Voice-to-text makes capturing quick ideas effortless, while the search function ensures you never lose a note again. \n\nGoogle Keep’s minimalist design encourages focus and reduces clutter, making it ideal for creative professionals, students, and busy individuals alike. It’s not just a note-taking app — it’s your digital memory, always ready when inspiration strikes.",
+        "size": 30,
+        "reviews": 2500000,
+        "ratingAvg": 4.5,
+        "downloads": "1B+"
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co.com/7JvC3jfK/download.jpg",
+        "title": "Fitbit - Activity & Health",
+        "shortDescription": "Track fitness & wellness data",
+        "companyName": "Fitbit LLC",
+        "description": "Fitbit is your personal wellness companion, designed to help you understand your body, track your activity, and build healthy habits. Whether it’s counting steps, monitoring your heart rate, or analyzing your sleep patterns, Fitbit offers precise insights that motivate you to move more and stress less. When paired with a Fitbit wearable, the app provides real-time data visualization, fitness trends, and health reports tailored to your lifestyle. \n\nDaily challenges, badges, and community features turn fitness into a motivating, social experience. The app also includes mindfulness sessions, hydration tracking, and menstrual health insights — all in one dashboard. Personalized recommendations adapt to your goals, ensuring a balanced journey toward wellness. \n\nWith Fitbit, every heartbeat, workout, and night of rest contributes to a clearer picture of your overall health. It’s more than tracking — it’s transformation powered by awareness.",
+        "size": 95,
+        "reviews": 1300000,
+        "ratingAvg": 4.3,
+        "downloads": "50M+"
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co.com/84LvtCmt/download.png",
+        "title": "TravelMate - Trip Planner",
+        "shortDescription": "Plan trips & explore places",
+        "companyName": "WanderSoft",
+        "description": "TravelMate is your intelligent travel assistant that simplifies trip planning from start to finish. With powerful itinerary management, offline maps, and smart destination guides, it transforms how you explore the world. You can organize flights, accommodations, activities, and even restaurant stops in one unified view. The app provides real-time navigation, weather forecasts, and local recommendations tailored to your travel style. \n\nIts clean, map-centric interface helps visualize your entire trip while keeping all documents and bookings easily accessible offline. You can invite friends to collaborate on shared trips, add notes, or split expenses seamlessly. The built-in review system highlights authentic experiences from other travelers. \n\nWhether you’re traveling solo, as a couple, or with family, TravelMate keeps every journey stress-free and memorable — turning your adventures into perfectly organized experiences.",
+        "size": 110,
+        "reviews": 1700,
+        "ratingAvg": 4.5,
+        "downloads": "3.5M"
+    }
+]
