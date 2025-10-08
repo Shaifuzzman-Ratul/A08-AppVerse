@@ -1,19 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaRegThumbsUp } from "react-icons/fa6";
 
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { addToStoredDB, getStoredBook } from '../../Utility/addToDB';
 const AppDetails = () => {
     const { id } = useParams()
     const appId = parseInt(id)
     const appData = useLoaderData()
     const singleApp = appData.find(app => app.id === appId)
+    const handleMarkAsRead = id => {
+        addToStoredDB(id);
+    }
     const [install, setInstall] = useState(false);
 
-    const handleClickInstall = () => {
+
+    // const [installedList, setInstalledList] = useState([]);
+    // console.log(installedList);
+
+    // const installApp = (appId) => {
+    //     const app = apps.find((a) => a.id === appId);
+    //     if (!installedList.includes(app)) {
+    //         setInstalledList([...installedList, app]);
+    //     }
+    // };
+
+    // const uninstallApp = (appId) => {
+    //     setInstalledList(installedList.filter((a) => a.id !== appId));
+    // };
+    useEffect(() => {
+        const installedApps = getStoredBook();
+        if (installedApps.includes(appId)) {
+            setInstall(true);
+        }
+    }, [appId]);
+
+    const handleClickInstall = (id) => {
         setInstall(true);
+        // installApp(appData.id)
+        handleMarkAsRead(id)
     };
 
 
@@ -51,7 +78,7 @@ const AppDetails = () => {
                             <p className='font-extrabold text-2xl'>{singleApp.reviews}</p>
                         </div>
                     </div>
-                    <div><button onClick={() => handleClickInstall()} className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> {install === true ? "Installed" : `Install Now (${singleApp.size} MB)`}</button></div>
+                    <div><button onClick={() => handleClickInstall(id)} className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> {install === true ? "Installed" : `Install Now (${singleApp.size} MB)`}</button></div>
                 </span>
             </div>
             <div className="divider w-max-[1200px]"></div>
@@ -65,6 +92,7 @@ const AppDetails = () => {
             <div className='pt-9 p-5 lg:pl-33'><p className='font-bold text-2xl mb-5 '>Description</p>
                 <p className='text-gray-500  mb-15'>
                     {singleApp.description}</p></div>
+
         </div>
     );
 };

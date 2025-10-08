@@ -31,8 +31,14 @@ export const router = createBrowserRouter([
         },
         {
             path: "/installation",
-            element: <Installtion></Installtion>
+            loader: async () => {
+                const res = await fetch("/allApps.json");
+                const data = await res.json();   // 👈 parse JSON here
+                return data;                     // 👈 must return this
+            },
+            element: <Installtion />,
         }
+
 
 
 
