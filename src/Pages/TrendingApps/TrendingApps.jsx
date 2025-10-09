@@ -11,7 +11,7 @@ const TrendingApps = () => {
         )
     }, [])
     return (
-        <div className='w-max-[1200px] mx-auto text-center bg-gray-200  pb-40'>
+        <div className='w-max-[1200px] mx-auto text-center bg-gray-100  pb-40'>
             <div>
                 <h1 className='font-bold text-4xl pt-9 '>Trending Apps</h1>
                 <p className='text-gray-600 mt-2'>Explore All Trending Apps on the Market developed by us</p></div>

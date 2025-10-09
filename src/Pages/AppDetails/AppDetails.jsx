@@ -51,7 +51,7 @@ const AppDetails = () => {
 
 
     return (
-        <div className='bg-gray-200 w-max-[1200px] mx-auto'>
+        <div className='bg-gray-100 w-max-[1200px] mx-auto'>
             <div className='pt-9 p-5 lg:pl-33 lg:flex lg:gap-20 lg:my-4'>
                 <span className=''><img src={singleApp.image} className='rounded-2xl' alt="" />
                 </span>
@@ -87,10 +87,39 @@ const AppDetails = () => {
                     <div><button onClick={() => handleClickInstall(id)} className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> {install === true ? "Installed" : `Install Now (${singleApp.size} MB)`}</button></div>
                 </span>
             </div>
-            <div className="divider w-max-[1200px]"></div>
+            <div className="divider max-w-[1200px] mx-auto"></div>
+            {/* chart */}
+            <div className='space-y-3  max-w-[1200px] mx-auto'>
+                <h3 className='font-bold text-2xl'>Rating</h3>
+                <div className='p-4 h-80 bg-gray-100  rounded-xl  max-w-[1200px]'>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                            width={500}
+                            height={300}
+                            layout="vertical"
 
-            <div><h1>rating grap</h1>
-
+                            data={[...singleApp.ratings].reverse()} margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                            <XAxis type="count" />
+                            <YAxis
+                                type="category"
+                                dataKey="name"
+                                tick={{ fontSize: 15 }}
+                                width={70}
+                            />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="count" fill="#ff8811" activeBar={<Rectangle fill="pink" stroke="blue" />} />
+                            <Bar dataKey="name" fill="#f3f4f6" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </div>
             </div>
 
             <div className="divider w-max-[1200px]"></div>

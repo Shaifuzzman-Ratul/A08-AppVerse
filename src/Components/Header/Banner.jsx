@@ -4,7 +4,7 @@ import { FaAppStoreIos } from "react-icons/fa";
 
 const Banner = () => {
     return (
-        <div className='bg-gray-200'>
+        <div className='bg-gray-100'>
             <div className='text-center max-w-[1200px] mx-auto pt-10 flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-6xl p-5'>We Build <br />
                     <span className='text-[#804ee8]'>Productive</span> Apps</h1>
