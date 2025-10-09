@@ -36,7 +36,7 @@ const Apps = () => {
             <div className='mr-15 ml-15 mb-15 mx-auto pt-9 grid lg:grid-cols-4  gap-4'>
 
                 {
-                    allApps.length === 0 ? (<h1>App are loading</h1>) :
+                    allApps.length === 0 ? (<span className="loading loading-bars loading-xl"></span>) :
                         allApps.map(app => <EachApp app={app} key={app.id}></EachApp>)
                 }
             </div>

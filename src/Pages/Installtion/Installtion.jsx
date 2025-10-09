@@ -4,10 +4,23 @@ import { FaArrowDown } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { getStoredBook, removeFromStoredBook } from '../../Utility/addToDB';
 import { useLoaderData } from 'react-router';
+import Swal from 'sweetalert2';
 // import { useParams } from 'react-router';
 const Installtion = () => {
     const [readList, setReadList] = useState([]);
     const [sort, setsort] = useState("");
+
+    const handleSort = (type) => {
+        setsort(type);
+        if (type === "downloads") {
+            const sortedByDownloads = [...readList].sort((a, b) => a.downloads - b.downloads)
+            setReadList(sortedByDownloads);
+        }
+        if (type === "ratingAvg") {
+            const sortedByRating = [...readList].sort((a, b) => a.ratingAvg - b.ratingAvg);
+            setReadList(sortedByRating);
+        }
+    }
 
     const data = useLoaderData();
     console.log("Loaded Data:", data);
@@ -21,19 +34,32 @@ const Installtion = () => {
 
         setReadList(myRealList);
     }, [data]);
-    console.log(readList);
+    // console.log(readList);
     const handleUninstall = (appId) => {
-        // Remove app ID from local storage
-        let storedApps = getStoredBook(); // returns array of IDs
-        removeFromStoredBook(appId); // Remove from localStorage
-
-        const updatedApps = storedApps.filter(id => parseInt(id) !== appId);
-
-        // Save updated list back to local storage
-        localStorage.setItem('installedBooks', JSON.stringify(updatedApps));
-
-        // Update state so UI updates instantly
+        let storedApps = getStoredBook();
+        removeFromStoredBook(appId);
+        // const updatedApps = storedApps.filter(id => parseInt(id) !== appId);
+        // localStorage.setItem('installedBooks', JSON.stringify(updatedApps));
         setReadList(prev => prev.filter(app => app.id !== appId));
+
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Uninstall it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Uninstalled !",
+                    text: "Your App has been uninstalled.",
+                    icon: "success"
+                });
+            }
+        });
     };
 
     return (
@@ -47,11 +73,11 @@ const Installtion = () => {
 
                 <span>
                     <div className="dropdown dropdown-start">
-                        <div tabIndex={0} role="button" className="btn m-1">Sort By <MdArrowDropDown className='text-2xl' />
+                        <div tabIndex={0} role="button" className="btn m-1"> <span className='text-gray-500'>Sort By :</span> {sort ? sort : ""}<MdArrowDropDown className='text-2xl' />
                         </div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a>Rating</a></li>
-                            <li><a>Size</a></li>
+                            <li><a onClick={() => handleSort("downloads")}>Downloads</a></li>
+                            <li><a onClick={() => handleSort("ratingAvg")}>Rating</a></li>
                         </ul>
                     </div></span>
             </div>

@@ -8,7 +8,7 @@
         "size": 100,
         "reviews": "32K",
         "ratingAvg": 4.4,
-        "downloads": "1000M",
+        "downloads": 1000,
         "ratings": [
             {
                 "name": "1 star",
@@ -41,7 +41,7 @@
         "size": 90,
         "reviews": "17K",
         "ratingAvg": 4.5,
-        "downloads": "1000M",
+        "downloads": 1000,
         "ratings": [
             {
                 "name": "1 star",
@@ -74,7 +74,7 @@
         "size": 60,
         "reviews": "19K",
         "ratingAvg": 4.7,
-        "downloads": "500M",
+        "downloads": 500,
         "ratings": [
             {
                 "name": "1 star",
@@ -107,7 +107,7 @@
         "size": 150,
         "reviews": "12K",
         "ratingAvg": 4.8,
-        "downloads": "500M",
+        "downloads": 500,
         "ratings": [
             {
                 "name": "1 star",
@@ -140,7 +140,7 @@
         "size": 150,
         "reviews": "10.5K",
         "ratingAvg": 4.3,
-        "downloads": "1000M",
+        "downloads": 1000,
         "ratings": [
             {
                 "name": "1 star",
@@ -173,7 +173,7 @@
         "size": 30,
         "reviews": "2.5K",
         "ratingAvg": 4.5,
-        "downloads": "1000M",
+        "downloads": 1000,
         "ratings": [
             {
                 "name": "1 star",
@@ -206,7 +206,7 @@
         "size": 95,
         "reviews": "1.3K",
         "ratingAvg": 4.3,
-        "downloads": "50M",
+        "downloads": 50,
         "ratings": [
             {
                 "name": "1 star",
@@ -239,7 +239,7 @@
         "size": 110,
         "reviews": "1.7K",
         "ratingAvg": 4.5,
-        "downloads": "3.5M",
+        "downloads": 3.5,
         "ratings": [
             {
                 "name": "1 star",
@@ -265,14 +265,14 @@
     },
     {
         "id": 9,
-        "image": "https://i.ibb.co/wC0LgY5/download.jpg",
+        "image": "https://i.ibb.co.com/5bTm1SM/download.png",
         "title": "Notion - Notes & Tasks",
         "companyName": "Notion Labs Inc.",
         "description": "Notion is an all-in-one productivity platform for notes, tasks, databases, and project management. Users can organize workspaces, collaborate in real time, and structure content with templates, tables, calendars, and boards. Notion supports linking pages, rich media, and task assignment for team efficiency. Its flexible system adapts to personal, educational, and business needs, enabling project tracking, documentation, and knowledge management. Advanced search, cross-device syncing, and permissions ensure that users have consistent access to data. Notion’s integration with external tools and apps facilitates workflow automation and data import. Overall, it provides a unified solution for organizing work and personal life effectively.",
         "size": 80,
         "reviews": "4.5K",
         "ratingAvg": 4.6,
-        "downloads": "200M",
+        "downloads": 200,
         "ratings": [
             {
                 "name": "1 star",
@@ -298,14 +298,14 @@
     },
     {
         "id": 10,
-        "image": "https://i.ibb.co/MkzM8Wq/download.jpg",
+        "image": "https://i.ibb.co.com/MyZdgV8y/download.png",
         "title": "Slack - Team Communication",
         "companyName": "Slack Technologies",
         "description": "Slack is a collaboration hub that connects teams through channels, direct messaging, file sharing, and integration with thousands of apps. It centralizes communication, reduces email clutter, and enables organized project discussions. Slack supports searchable archives, workflow automation, notifications, and real-time collaboration. Users can integrate tools for calendar management, file storage, and productivity enhancement. Customizable notifications, reminders, and shared channels allow efficient coordination. Slack is suitable for organizations of any size, fostering team alignment and productivity while maintaining a professional and structured communication environment. Its cross-platform accessibility ensures seamless interaction across desktop, mobile, and web devices.",
         "size": 120,
         "reviews": "6K",
         "ratingAvg": 4.4,
-        "downloads": "200M",
+        "downloads": 200,
         "ratings": [
             {
                 "name": "1 star",
@@ -331,14 +331,14 @@
     },
     {
         "id": 11,
-        "image": "https://i.ibb.co/1JnHqv8/download.jpg",
+        "image": "https://i.ibb.co.com/G4Tk4Czg/download.jpg",
         "title": "Google Maps - Navigation",
         "companyName": "Google LLC",
         "description": "Google Maps provides real-time GPS navigation, traffic updates, and route planning for drivers, walkers, cyclists, and public transport users. It offers detailed maps, street view imagery, satellite views, and local business information. Users can find directions, discover nearby points of interest, and access offline maps for travel without connectivity. Google Maps integrates with ride-sharing, reservation, and review platforms to enhance user experience. Features include voice-guided navigation, estimated arrival times, alternate routes, and real-time traffic alerts. Its reliable mapping and comprehensive data make it an essential tool for both daily commutes and global travel planning. Users can also contribute reviews, photos, and updates, enriching the map for the community.",
         "size": 200,
         "reviews": "55K",
         "ratingAvg": 4.7,
-        "downloads": "1000M",
+        "downloads": 1000,
         "ratings": [
             {
                 "name": "1 star",
@@ -364,14 +364,14 @@
     },
     {
         "id": 12,
-        "image": "https://i.ibb.co/Tqpjv3J/download.jpg",
+        "image": "https://i.ibb.co.com/GQYmNG2q/download.jpg",
         "title": "Zoomerang - Video Editor",
         "companyName": "Zoomerang Inc.",
         "description": "Zoomerang is a mobile video editing app offering creative tools, effects, transitions, and music for social media content. Users can create videos using ready-made templates, cut clips easily, and apply advanced editing features. The app supports layering effects, stickers, and text overlays. Zoomerang provides options for sharing directly to social platforms, optimizing content for engagement. Its simple interface allows both beginners and advanced creators to produce high-quality videos quickly. Tutorials, trend-based effects, and community features encourage creativity. Zoomerang is suitable for influencers, content creators, and casual users seeking professional-quality results from a mobile device.",
         "size": 70,
         "reviews": "2.2K",
         "ratingAvg": 4.5,
-        "downloads": "50M",
+        "downloads": 50,
         "ratings": [
             {
                 "name": "1 star",
@@ -397,14 +397,14 @@
     },
     {
         "id": 13,
-        "image": "https://i.ibb.co/yBvR9vY/download.jpg",
+        "image": "https://i.ibb.co.com/Cpx0yHHb/download.png",
         "title": "Headspace - Meditation & Sleep",
         "companyName": "Headspace Inc.",
         "description": "Headspace offers guided meditation, mindfulness exercises, and sleep aids designed to improve mental wellbeing. The app includes breathing exercises, stress-relief sessions, sleep stories, and tips for daily practice. Users can track meditation streaks and set reminders for consistent practice. Headspace provides programs for focus, anxiety management, and relaxation, helping individuals cultivate calm and awareness. Audio and visual guides, along with personalized plans, make mindfulness accessible to beginners and experienced practitioners. The platform emphasizes evidence-based practices, encouraging long-term habit formation and improved mental health. It is suitable for anyone seeking to reduce stress, enhance sleep, and incorporate mindfulness into daily life.",
         "size": 95,
         "reviews": "8K",
         "ratingAvg": 4.6,
-        "downloads": "100M",
+        "downloads": 100,
         "ratings": [
             {
                 "name": "1 star",
@@ -430,14 +430,14 @@
     },
     {
         "id": 14,
-        "image": "https://i.ibb.co/x6ZFnJw/download.jpg",
+        "image": "https://i.ibb.co.com/cKyHwnVw/download.png",
         "title": "Adobe Lightroom - Photo Editor",
         "companyName": "Adobe Inc.",
         "description": "Adobe Lightroom is a professional photo editing app providing tools for color correction, exposure adjustment, cropping, retouching, and presets. Users can apply filters, create custom edits, and sync projects across devices using Adobe Creative Cloud. Lightroom supports RAW image editing and batch processing for efficiency. Its intuitive interface allows photographers to manage large libraries and produce high-quality results. Advanced features include selective adjustments, geometry correction, and lens correction. Tutorials and community resources enhance learning and creative possibilities. Lightroom is ideal for professional photographers, hobbyists, and content creators seeking precise control, consistent results, and a streamlined workflow across devices.",
         "size": 150,
         "reviews": "5K",
         "ratingAvg": 4.7,
-        "downloads": "200M",
+        "downloads": 200,
         "ratings": [
             {
                 "name": "1 star",
@@ -463,14 +463,14 @@
     },
     {
         "id": 15,
-        "image": "https://i.ibb.co/LJQk0K1/download.jpg",
+        "image": "https://i.ibb.co.com/bMrJhhWg/download.jpg",
         "title": "TikTok - Short Videos",
         "companyName": "ByteDance Ltd.",
         "description": "TikTok is a global platform for creating, sharing, and discovering short-form videos. Users can explore trending content, interact with music, filters, and effects, and post videos to engage audiences. The app uses a personalized algorithm to deliver content based on user preferences and behavior. TikTok supports collaborations, duets, and live streaming, fostering a creative community. Analytics and insights help creators understand engagement and growth. Safety features include privacy settings, content moderation, and parental controls. TikTok offers a dynamic and immersive experience for entertainment, education, and creative expression, connecting millions of users worldwide in a professional yet approachable environment.",
         "size": 100,
         "reviews": "80K",
         "ratingAvg": 4.6,
-        "downloads": "1500M",
+        "downloads": 1500,
         "ratings": [
             {
                 "name": "1 star",
@@ -496,14 +496,14 @@
     },
     {
         "id": 16,
-        "image": "https://i.ibb.co/8zQfM1T/download.jpg",
+        "image": "https://i.ibb.co.com/39KZpFMC/download.jpg",
         "title": "Instagram - Photo & Video",
         "companyName": "Meta Platforms, Inc.",
         "description": "Instagram is a visual storytelling platform for sharing photos, videos, and Reels with a global audience. Users can apply creative tools, AR filters, and editing options to enhance content. The app supports stories, live broadcasts, shopping features, and direct messaging for seamless interaction. Instagram provides personalized feeds, content discovery, and community engagement through likes, comments, and collaborations. Insights and analytics help creators measure reach and performance. Hashtags, trends, and location tagging enable connection with relevant audiences. Instagram is designed for individuals, businesses, and creators seeking a professional yet approachable platform for sharing visual content, building communities, and exploring global trends.",
         "size": 120,
         "reviews": "120K",
         "ratingAvg": 4.5,
-        "downloads": "2000M",
+        "downloads": 2000,
         "ratings": [
             {
                 "name": "1 star",

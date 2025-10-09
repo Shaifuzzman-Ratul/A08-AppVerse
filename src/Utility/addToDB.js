@@ -13,7 +13,7 @@ const getStoredBook = () => {
 export const removeFromStoredBook = (id) => {
     const stored = getStoredBook();
     const updated = stored.filter(bookId => parseInt(bookId) !== id);
-    localStorage.setItem("installedBooks", JSON.stringify(updated));
+    localStorage.setItem("readList", JSON.stringify(updated));
 };
 
 const addToStoredDB = (id) => {

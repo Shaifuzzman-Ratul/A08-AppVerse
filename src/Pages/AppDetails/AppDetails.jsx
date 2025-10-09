@@ -6,6 +6,7 @@ import { FaRegThumbsUp } from "react-icons/fa6";
 
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { addToStoredDB, getStoredBook } from '../../Utility/addToDB';
+import Swal from 'sweetalert2';
 const AppDetails = () => {
     const { id } = useParams()
     const appId = parseInt(id)
@@ -15,33 +16,38 @@ const AppDetails = () => {
         addToStoredDB(id);
     }
     const [install, setInstall] = useState(false);
-
-
-    // const [installedList, setInstalledList] = useState([]);
-    // console.log(installedList);
-
-    // const installApp = (appId) => {
-    //     const app = apps.find((a) => a.id === appId);
-    //     if (!installedList.includes(app)) {
-    //         setInstalledList([...installedList, app]);
-    //     }
-    // };
-
-    // const uninstallApp = (appId) => {
-    //     setInstalledList(installedList.filter((a) => a.id !== appId));
-    // };
     useEffect(() => {
-        const installedApps = getStoredBook();
-        if (installedApps.includes(appId)) {
+        const installedApps = getStoredBook() || [];
+        const installedNumbers = installedApps.map(Number);
+        if (installedNumbers.includes(appId)) {
             setInstall(true);
         }
     }, [appId]);
 
     const handleClickInstall = (id) => {
+        if (install) {
+
+            Swal.fire({
+                title: "Already Installed!",
+                icon: "info",
+                timer: 1500,
+                showConfirmButton: false
+            });
+            return;
+        }
+
+
+        addToStoredDB(id);
         setInstall(true);
-        // installApp(appData.id)
-        handleMarkAsRead(id)
+        handleMarkAsRead()
+        Swal.fire({
+            title: "Successfully Installed!",
+            icon: "success",
+            timer: 1500,
+            showConfirmButton: false
+        });
     };
+
 
 
     return (
@@ -60,7 +66,7 @@ const AppDetails = () => {
                         <div>
                             <MdOutlineFileDownload className='text-[#29a871] text-4xl' />
                             <p className='text-gray-500'>Downloads</p>
-                            <p className='font-extrabold text-2xl'>{singleApp.downloads}</p>
+                            <p className='font-extrabold text-2xl'>{singleApp.downloads}M</p>
                         </div>
 
                         <div>

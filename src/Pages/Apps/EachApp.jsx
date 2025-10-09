@@ -11,7 +11,7 @@ const EachApp = ({ app }) => {
             <h3 className='font-semibold pb-5'>{app.title}</h3>
 
             <span className='flex justify-between'><p className='text-green-400 w-[65px] h-[29px] rounded-md bg-gray-100 flex gap-1 justify-center items-center p-'><FaArrowDown />
-                {app.downloads}</p>
+                {app.downloads}M</p>
                 <p className='text-[#ff8811] w-[60px] h-[26px] rounded-md bg-[#fff0e1] flex gap-1 justify-center items-center p-' ><FaStar />
                     {app.ratingAvg
                     }</p></span>
