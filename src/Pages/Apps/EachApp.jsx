@@ -6,7 +6,7 @@ const EachApp = ({ app }) => {
     // console.log(app);
 
     return (
-        <Link to={`/appDetails/${app.id}`}>  <div className='shadow-sm p-3 bg-white rounded-sm '>
+        <Link to={`/appDetails/${app.id}`}>  <div className='shadow-sm p-3 bg-white rounded-sm   '>
             <img src={app.image} alt={app.title} className='rounded-2xl mx-auto m-3' />
             <h3 className='font-semibold pb-5'>{app.title}</h3>
 

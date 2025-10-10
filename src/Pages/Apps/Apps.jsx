@@ -3,6 +3,8 @@ import EachApp from './EachApp';
 
 const Apps = () => {
     const [allApps, setAllApps] = useState([]);
+    // console.log(search)
+
     useEffect(() => {
         fetch('/allApps.json').then(res => res.json()).then(data => {
             // console.log(data)
@@ -10,12 +12,18 @@ const Apps = () => {
         }
         )
     }, [])
+    const [search, setSearch] = useState("");
+    const term = search.trim().toLocaleLowerCase();
+
+    const searched = term ? allApps.filter(app => app.title.toLocaleLowerCase().includes(term)) : allApps;
+    console.log(searched);
+
     return (
         <div className='bg-gray-200 text-center py-4 '>
             <h1 className='font-bold text-4xl pb-3'>Our All Applications</h1>
             <p className='text-gray-600 pb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
             <div className='flex  mx-auto   items-center justify-center gap-8 lg:gap-259 '>
-                <p className='font-semibold text-lg'>({allApps.length}) Apps Found</p>
+                <p className='font-semibold text-lg'>({searched.length}) Apps Found</p>
 
                 <span><label className="input">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -30,14 +38,15 @@ const Apps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input type="search" required placeholder="Search" />
+                    <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search" />
                 </label></span>
             </div>
             <div className='mr-15 ml-15 mb-15 mx-auto pt-9 grid lg:grid-cols-4  gap-4'>
 
                 {
-                    allApps.length === 0 ? (<span className="loading loading-bars loading-xl"></span>) :
-                        allApps.map(app => <EachApp app={app} key={app.id}></EachApp>)
+                    search.length === 0 ? (<div className='text-center flex justify-center items-center p-15
+                         pl-6'><span className="loading loading-bars loading-xl text-center"></span></div>) :
+                        searched.map(app => <EachApp app={app} key={app.id}></EachApp>)
                 }
             </div>
         </div>
