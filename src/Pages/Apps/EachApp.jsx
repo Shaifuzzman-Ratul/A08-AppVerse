@@ -3,7 +3,6 @@ import { FaArrowDown } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router';
 const EachApp = ({ app }) => {
-    // console.log(app);
 
     return (
         <Link to={`/appDetails/${app.id}`}>  <div className='shadow-sm p-3 bg-white rounded-sm   '>

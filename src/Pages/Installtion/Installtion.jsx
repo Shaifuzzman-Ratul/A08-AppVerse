@@ -34,12 +34,10 @@ const Installtion = () => {
 
         setReadList(myRealList);
     }, [data]);
-    // console.log(readList);
     const handleUninstall = (appId) => {
         let storedApps = getStoredBook();
         removeFromStoredBook(appId);
-        // const updatedApps = storedApps.filter(id => parseInt(id) !== appId);
-        // localStorage.setItem('installedBooks', JSON.stringify(updatedApps));
+
         setReadList(prev => prev.filter(app => app.id !== appId));
 
 
@@ -108,25 +106,6 @@ const Installtion = () => {
                 </div>)}</div>
 
 
-            {/* <div className='bg-white rounded-xl lg:w-[1280px] mx-auto m-8 flex justify-between p-5 items-center'>
-                <div className='flex'>
-
-                    <div>   <img src={readList.image} alt="" /></div>
-                    <div><h1>titlt</h1>
-
-
-                        <span className='flex '><p className='text-green-400 w-[65px] h-[29px] rounded-md bg-gray-100 flex gap-1 justify-center items-center p-'><FaArrowDown />
-                            9M</p>
-                            <p className='text-[#ff8811] w-[60px] h-[26px] rounded-md bg-[#fff0e1] flex gap-1 justify-center items-center p-' ><FaStar />
-                                {readList.size
-                                }</p></span>
-                    </div>
-                </div>
-
-                <div>
-                    <button className="btn mt-5 bg-[#00d390] text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> Uninstall</button>
-                </div>
-            </div> */}
         </div>
     );
 };
