@@ -59,8 +59,8 @@ npm run dev
 
 ## 🔗 Live & Relevant Links
 
-[![Live Website](https://img.shields.io/badge/Live%20Website-🌐-blue)](https://appverse9.netlify.app/)) 
-[![GitHub Client](https://img.shields.io/badge/GitHub-Client-181717?style=for-the-badge&logo=github)](https://github.com/Shaifuzzman-Ratul/A08-AppVerse)) 
+[![Live Website](https://img.shields.io/badge/Live%20Website-🌐-blue)](https://appverse9.netlify.app/)
+[![GitHub Client](https://img.shields.io/badge/GitHub-Client-181717?style=for-the-badge&logo=github)](https://github.com/Shaifuzzman-Ratul/A08-AppVerse)
 
 #### 📫 Connect With Me
 
