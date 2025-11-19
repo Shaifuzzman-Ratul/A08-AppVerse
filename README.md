@@ -1,4 +1,4 @@
-#Appverse
+Appverse
 
 Live Site: [https://your-client-live-url.com](https://appverse9.netlify.app/)
 
