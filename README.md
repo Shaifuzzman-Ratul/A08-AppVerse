@@ -48,7 +48,7 @@ npm install react react-dom react-router-dom axios tailwindcss daisyui framer-mo
 
 ### Clone the repository
 ```bash
-git clone https://github.com/Shaifuzzman-Ratul/Import-Export-Hub
+git clone https://github.com/Shaifuzzman-Ratul/A08-AppVerse
 ```
 **Client Setup**
 ```bash
